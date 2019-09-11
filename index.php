@@ -1,26 +1,38 @@
 <?php
-include('vendor/autoload.php');
-//start session
+require('vendor/autoload.php');
+
+//create navigation
+use bhrsujit\Navigation;
+
+$nav = new Navigation();
+$navigation = $nav -> getNavigation();
 
 
-use bhrsujit\navigation;
-$navigation =new Navigation();
+//create an instance of Product class
+use bhrsujit\Product;
 
-$Navigation = $navigation -> MainNavigation();
+$p = new Product();
+$products = $p -> getProducts();
 
+//create categories
+use bhrsujit\Category;
+
+$cat = new Category();
+$categories = $cat -> getCategories();
+
+//create twig loader for templates
 $loader = new Twig_Loader_Filesystem('templates');
+
 //create twig environment
 $twig = new Twig_Environment($loader);
+
 //load a twig template
 $template = $twig -> load('home.twig');
 
-
-//pass values to twig
-echo $template -> render([ 
-    
-    'navigation' => $navigation
-   
-]);
-
-
+echo $template -> render( array(
+    'categories' => $categories,
+    'navigation' => $navigation,
+    'products' => $products,
+    'title' => 'Welcome to the shop'
+) );
 ?>

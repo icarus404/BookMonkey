@@ -1,0 +1,6 @@
+# tyo environment variables ko database connection values ho yo.
+
+SetEnv  dbhost localhost 
+SetEnv  dbuser bookmonkey 
+SetEnv  dbpass bookmonkey
+SetEnv  dbname bookdata
