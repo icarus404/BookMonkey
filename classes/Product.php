@@ -27,7 +27,9 @@ class Product extends Database{
         FROM product
         INNER JOIN product_quantity
         ON product.product_id = product_quantity.product_id
+       
         ";
+        
 
         if( isset( $this -> category ) ){
             $query = $query . 
