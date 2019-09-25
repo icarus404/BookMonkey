@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	
+{% include 'partials/heading.twig' %}
+	
+
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/contactlayout.css">
+	<link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="title">
+				<div class="logo-ptitle-bar">
+					<div id="plogo">
+						<a><img src="images/products/book1.png" title="BookMonkey"></a>
+					</div>
+					<div id="page-title">
+						<h2>YOUR ONLINE BOOKSTORE</h1>
+					</div>
+				</div>
+				
+                
+			</div>
+			
+			<div class="nav-menu">
+				{% include 'partials/navigation.twig' %}
+			</div>
+			
+			
+			
+		</header>
+		<main>
+			<div class="contact-form">
+			    <div class="contact-us">
+			        <h2>Contact Us</h2>
+			        <p>Swing by our store, or leave us a message:</p>
+			    </div>
+			    <div class="row">
+			        <div class="column">
+							
+						<div class="gmap_canvas">
+							<iframe id="gmap_canvas"
+								src="https://maps.google.com/maps?q=C_Get Computer Center Pvt. Ltd.&t=&z=16&ie=UTF8&iwloc=&output=embed"
+								height= "412px" width= "100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+							</iframe>
+						</div>
+			        </div>
+			        <div class="column">
+			            <form action="                 " method="post">
+			                <label for="name">Name</label>
+			                <input type="text" id="name" name="name" placeholder="Your name..">
+			                <label for="email">Email</label>
+			                <input type="text" id="email" name="email" placeholder="Your email..">
+			                <label for="message">Message</label>
+			                <textarea id="message" name="message" placeholder="Write something.." style="height:160px"></textarea>
+			                <input type="submit" name="submit" value="Submit">
+
+
+			            </form>
+			        </div>
+			    </div>
+			</div>
+		</main>
+		
+			{% include 'partials/footer.twig' %}
+		
+	</div>	
+</body>
+</html>

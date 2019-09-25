@@ -520,7 +520,6 @@ main>.fourth>.ancmnts>div {
 }
 
 /* Footer */
-
 .footer-distributed {
     background: rgba(1, 25, 44, 0.9);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -671,6 +670,7 @@ main>.fourth>.ancmnts>div {
     color: #01192c;
     transform: rotateZ(360deg);
 }
+
 
 
 @media (max-width: 1410px) {

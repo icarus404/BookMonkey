@@ -1,0 +1,224 @@
+
+footer {
+    grid-area: index-footer;
+}
+@media (max-width: 1468px) {
+
+    .wrapper {
+        grid-template-rows: 120px 100px 500px 380px;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .wrapper {
+        grid-template-rows: 120px 100px 500px 410px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .wrapper {
+        grid-template-rows: 120px 100px 500px 870px;
+    }
+
+    .title {
+         grid-template-columns: 77% 23%;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .wrapper {
+        grid-template-rows: 120px 100px 500px 870px;
+    }
+
+    .title {
+        grid-template-columns: 78% 22%;
+    }
+}
+
+@media (max-width: 725px) {
+    .wrapper {
+        grid-template-rows: 120px 100px 500px 870px;
+    }
+}
+
+
+@media (max-width: 685px) {
+    .wrapper {
+        grid-template-rows: 120px 30px 1000px 890px;
+    }
+
+    .logo-ptitle-bar {
+        grid-template-columns: 25% 75%;
+    }
+
+    .title {
+        grid-template-columns: 77% 23%;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        grid-template-rows: 120px 30px 1000px 940px;
+    }
+}
+
+@media (max-width: 325px) {
+    .wrapper {
+        grid-template-rows: 120px 30px 1100px 980px;
+    }
+}
+
+
+.footer-distributed {
+    background: rgba(1, 25, 44, 0.9);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+
+    padding: 55px 50px;
+    margin-top: 100px;  
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.footer-distributed .footer-left {
+    width: 30%;
+    margin-left: 110px;
+}
+
+/* logo */
+
+.footer-distributed>.footer-left>a>img {
+    height: 50px;
+    border: 2px solid #fff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #fff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links ul li {
+    list-style: none;
+}
+
+.footer-distributed .footer-links ul li a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+.footer-distributed .footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-distributed>.footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-distributed .footer-center {
+    width: 39%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #fff;
+    color: rgba(1, 25, 44, .9);
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-size: 12px;
+}
+
+.footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: rgba(1, 25, 44, 0.3);
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 10px;
+
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    transition: all ease-in-out 0.7s;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background: #fff;
+    color: #01192c;
+    transform: rotateZ(360deg);
+}

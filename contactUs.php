@@ -17,13 +17,13 @@ $loader = new Twig_Loader_Filesystem('templates');
 //create twig environment and pass the loader
 $twig = new Twig_Environment($loader);
 //call a twig template
-$template = $twig -> load('aboutus.twig');
+$template = $twig -> load('contactus.twig');
 //output the template and pass the data
 
 echo $template -> render( array(
     
     'navigation' => $navigation,
-    'title' => 'About Us!'
+    'title' => 'Contact Us!'
 ) );
 
 ?>
