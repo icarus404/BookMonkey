@@ -1,8 +1,14 @@
 <?php
 require('vendor/autoload.php');
 
+//get user's wishlist total
+use bhrsujit\WishList;
+
+$wish = new WishList();
+$wish_total = $wish -> getWishListTotal();
+
 // create account
-use  bhrsujit\Account;
+use bhrsujit\Account;
 
 if( $_SERVER['REQUEST_METHOD']=='POST' ){
   $email = $_POST['email'];
@@ -33,6 +39,7 @@ $template = $twig -> load('register.twig');
 
 echo $template -> render( array(
     'register' => $register,
+    'wish' => $wish_total,
     'navigation' => $navigation,
     'title' => 'Register for an account'
 ) );

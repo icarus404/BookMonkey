@@ -1,6 +1,12 @@
 <?php
 require('vendor/autoload.php');
 
+//get user's wishlist total
+use bhrsujit\WishList;
+
+$wish = new WishList();
+$wish_total = $wish -> getWishListTotal();
+
 // create account
 use bhrsujit\Account;
 if( $_SERVER['REQUEST_METHOD']=='POST' ){
@@ -17,7 +23,7 @@ else{
 }
 
 //create navigation
-use bhrsujit\Navigation;  //create navigation after account as navigation changes as user level
+use bhrsujit\Navigation;
 
 $nav = new Navigation();
 $navigation = $nav -> getNavigation();
@@ -34,6 +40,7 @@ $template = $twig -> load('login.twig');
 
 echo $template -> render( array(
     'login' => $login,
+    'wish' => $wish_total,
     'navigation' => $navigation,
     'title' => 'Login to your account'
 ) );

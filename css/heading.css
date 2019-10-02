@@ -1,0 +1,52 @@
+.logo-ptitle-bar {
+    grid-area: header-l-pt;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 120px;
+    grid-template-areas : 
+    "header-logo header-pt";
+}
+
+#plogo {
+    grid-area: header-logo;
+} 
+
+#page-title {
+    grid-area: header-pt;
+}
+
+
+#plogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plogo img {
+   height: 80px;
+   cursor: pointer;
+   border-radius: 50%;
+   transition-property: transform;
+   transition: all 0.9s ease-in-out;
+}
+
+#plogo img:hover {
+   transform: rotateZ(360deg);
+}
+
+/* Page title */
+
+#page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-title h1 {
+   font-weight: bold;
+   font-size: 33px;
+   font-family: Flubber;
+   color: #01192c;
+   text-align: center;
+   word-spacing: 12px;
+}
