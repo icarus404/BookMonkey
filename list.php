@@ -2,7 +2,7 @@
 require('vendor/autoload.php');
 
 //get user's wishlist total
-use aitsydney\WishList;
+use bhrsujit\WishList;
 
 $wish = new WishList();
 
@@ -15,7 +15,7 @@ $wish_items = $wish -> getWishListItems();
 
 
 // create navigation
-use aitsydney\Navigation;
+use bhrsujit\Navigation;
 
 $nav = new Navigation();
 $navigation = $nav -> getNavigation();

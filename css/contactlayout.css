@@ -35,11 +35,12 @@
 
 #page-title {
     grid-area: header-pt;
+    
 }
 
 #contact {
     grid-area: header-contact;
-   
+    
 }
 
 .nav-menu {

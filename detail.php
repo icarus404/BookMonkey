@@ -3,6 +3,18 @@ require('vendor/autoload.php');
 
 use bhrsujit\Navigation;
 
+//get user's wishlist total
+use bhrsujit\WishList;
+
+$wish = new WishList();
+
+if( $_SERVER['REQUEST_METHOD'] == 'GET' && $_GET['add'] == 'list'){
+    $product_id = $_GET['product_id'];
+    $add = $wish -> addItem($product_id);
+}
+
+$wish_total = $wish -> getWishListTotal();
+
 $nav = new Navigation();
 $navigation = $nav -> getNavigation();
 
@@ -28,6 +40,7 @@ $template = $twig -> load('detail.twig');
 
 echo $template -> render( array(
     'navigation' => $navigation,
+    'wish' => $wish_total,
     'detail' => $detail,
     'title' => $detail['product']['name']
 ) );

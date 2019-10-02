@@ -6,4 +6,6 @@ $account = new Account();
 $account -> logout();
 
 header('location: index.php');
+
+
 ?>
