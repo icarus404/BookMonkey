@@ -52,11 +52,11 @@
     color: white;
 }
 
-#page-title h1 {
+#page-title  {
    font-weight: bold;
    font-size: 33px;
    font-family: Flubber;
-   color: #01192c;
+   color: white;
    text-align: center;
    word-spacing: 12px;
 }
