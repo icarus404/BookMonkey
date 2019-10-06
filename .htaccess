@@ -1,6 +1,13 @@
-# tyo environment variables ko database connection values ho yo.
+# tyo environment variables ko local database connection values ho yo.# le code disable garxa
 
-SetEnv  dbhost localhost 
+#SetEnv  dbhost localhost 
+#SetEnv  dbuser bookmonkey 
+#SetEnv  dbpass bookmonkey
+#SetEnv  dbname bookdata
+
+#yo tala chai hamro remote database connection ho
+
+SetEnv  dbhost oa4.info 
 SetEnv  dbuser bookmonkey 
-SetEnv  dbpass bookmonkey
-SetEnv  dbname bookdata
+SetEnv  dbpass AdvancedWeb2019
+SetEnv  dbname bookmonkey
