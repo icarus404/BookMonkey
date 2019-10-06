@@ -12,6 +12,7 @@ $navigation = $nav -> getNavigation();
 
 
 
+
 //create twig loader for templates
 $loader = new Twig_Loader_Filesystem('templates');
 //create twig environment and pass the loader
@@ -25,5 +26,6 @@ echo $template -> render( array(
     'navigation' => $navigation,
     'title' => 'Contact Us!'
 ) );
+
 
 ?>

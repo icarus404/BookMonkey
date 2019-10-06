@@ -3,10 +3,10 @@
     {% include 'partials/heading.twig' %}
     <body >
     {% include 'partials/navigation.twig' %}
-        <main class="container-fluid" style="padding-top:30px;">
+        <main class="container" style="padding-top:30px;">
             {% if wish_items | length > 0 %}
               <div class="row">
-                <div class="col">
+                <div class="col-12">
                   <h4>
                     Your wishlist contains {{ wish_items | length }} items
                   </h4>
@@ -19,11 +19,12 @@
                   </div>
                   <div class="col-md-4">
                     <h4>{{item.name}}</h4>
-                    <p>{{item.description | slice(0,80) ~ '...' }}</p>
-                    <a href="detail.php?product_id={{item.product_id}}">Detail</a>
+                    <h5 class="price">{{item.price}}</h5>
+                    <p>{{item.description | slice(0,120) ~ '...' }}</p>
+                    <a href="detail.php?product_id={{item.product_id}}" class="btn btn-outline-primary">Detail</a>
                   </div>
-                  <div class="col-md-5">
-                    <form class="form-inline" method="get">
+                  <div class="col-md-5 d-flex flex-column">
+                    <form class="form-inline h-100 d-flex flex-column align-items-end justify-content-center" method="get">
                       <input type="hidden" name="product_id" value="{{item.product_id}}">
                       <button class="btn btn-primary" type="submit" name="action" value="delete">Delete</button>
                     </form>
@@ -35,4 +36,5 @@
             {% endif %}
         </main>
     </body>
+    {% include 'partials/footer.twig' %}
 </html>
