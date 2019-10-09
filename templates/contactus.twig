@@ -31,7 +31,7 @@
 						</div>
 			        </div>
 			        <div class="column">
-			            <form action="                 " method="post">
+			            <form action="contactUs.php" method="post">
 			                <label for="name">Name</label>
 			                <input type="text" id="name" name="name" placeholder="Your name..">
 			                <label for="email">Email</label>
@@ -42,6 +42,11 @@
 
 
 			            </form>
+						{% if response %}
+							<div class="alert alert-success">
+								{{response}}
+							</div>
+						{%endif%}
 			        </div>
 			    </div>
 			</div>
