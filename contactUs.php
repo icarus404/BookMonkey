@@ -19,7 +19,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' ){
     $statement = $dbconnection -> prepare ($query);
     $statement -> bind_param("sss",$name,$email,$message);
     if($statement -> execute() ) {
-        $response = "thank you";
+        $response = "Message Sent. Thank You!";
     }
     else{
         $response = "something went wrong";
